@@ -8,7 +8,7 @@ principal.addEventListener('click', ()=>{
     let diamMaior = Number(document.getElementById('diamMaior').value)
     let diamMenor = Number(document.getElementById('diamMenor').value)
     let altura = Number(document.getElementById('altura').value)
-
+    
     let barril = new Barril(diamMaior, diamMenor, altura)
 
     console.log(barril)
@@ -25,6 +25,7 @@ principal.addEventListener('click', ()=>{
     console.log(`A área lateral do Barril é: ${Al.toFixed(2)}`)
     console.log(`A área total do Barril é: ${At.toFixed(2)}`)
     console.log(`O volume do Barril é: ${v.toFixed(2)}`)
+    console.log(`${classificacao}`)
 
     resposta.innerHTML = ``
     resposta.innerHTML += `A área da base da tampa do Barril é: ${Ab.toFixed(2)} cm² <br>`
